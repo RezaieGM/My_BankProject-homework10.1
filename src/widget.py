@@ -1,11 +1,15 @@
 from datetime import datetime
-from typing import Optional
-from .masks import mask_card, mask_account
+
+from .masks import mask_account, mask_card
+
+
 def mask_account_card(info: str) -> str:
     """
     Маскирует номер карты или счета в строке.
+
     Аргументы:
         info (str): Строка формата 'Тип Номер'.
+
     Возвращает:
         str: Замаскированная строка.
     """
@@ -24,10 +28,14 @@ def mask_account_card(info: str) -> str:
 def get_date(date_str: str) -> str:
     """
     Преобразует дату из ISO-формата в 'ДД.ММ.ГГГГ'.
+
     Аргументы:
         date_str (str): Дата в формате 'YYYY-MM-DDTHH:MM:SS.ssssss'.
+
     Возвращает:
         str: Дата в формате 'ДД.ММ.ГГГГ'.
     """
     dt = datetime.fromisoformat(date_str)
     return dt.strftime("%d.%m.%Y")
+
+# Новая пустая строка должна быть здесь (после последней закрывающей кавычки)
