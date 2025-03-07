@@ -37,5 +37,3 @@ def get_date(date_str: str) -> str:
     """
     dt = datetime.fromisoformat(date_str)
     return dt.strftime("%d.%m.%Y")
-
-# Новая пустая строка должна быть здесь (после последней закрывающей кавычки)

@@ -1,1 +1,10 @@
-# My Bank Project Feature Homewok 10_1
+# My Bank Project
+
+## Описание
+Проект представляет собой набор инструментов для работы с банковскими операциями.
+
+## Установка
+1. Установите Poetry:
+```bash
+....
+## pip install poetry
